@@ -1,4 +1,4 @@
-package sda.zadanie6;
+package sda.zadanie6_przeslanianie;
 
 public class Main {
     public static void main(String[] args) {

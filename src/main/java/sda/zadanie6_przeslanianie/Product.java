@@ -1,4 +1,4 @@
-package sda.zadanie6;
+package sda.zadanie6_przeslanianie;
 
 public class Product {
     private String name;

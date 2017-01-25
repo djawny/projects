@@ -1,4 +1,4 @@
-package sda.zadanie6;
+package sda.zadanie6_przeslanianie;
 
 public class ProductWithPrice extends Product {
     private double price=0.0;

@@ -1,4 +1,4 @@
-package sda.zadanie6;
+package sda.zadanie6_przeslanianie;
 
 import java.util.ArrayList;
 import java.util.List;
