@@ -1,4 +1,4 @@
-package sda.zadanie19_json;
+package sda.zadanie21_json;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

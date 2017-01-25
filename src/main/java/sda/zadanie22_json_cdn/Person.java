@@ -1,4 +1,4 @@
-package sda.zadanie20_json_cdn;
+package sda.zadanie22_json_cdn;
 
 public class Person {
     private String firstName;

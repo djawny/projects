@@ -1,4 +1,4 @@
-package sda.zadanie19_json.zad2;
+package sda.zadanie21_json.zad2;
 
 import java.util.List;
 import java.util.Map;

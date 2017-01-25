@@ -1,4 +1,4 @@
-package sda.zadanie19_json;
+package sda.zadanie21_json;
 
 public class Movie {
     String title;

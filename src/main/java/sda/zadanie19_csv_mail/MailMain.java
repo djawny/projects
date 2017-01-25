@@ -1,4 +1,4 @@
-package sda.zadanie21;
+package sda.zadanie19_csv_mail;
 
 import org.apache.commons.mail.EmailException;
 

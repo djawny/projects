@@ -1,4 +1,4 @@
-package sda.zadanie19_json.zad2;
+package sda.zadanie21_json.zad2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

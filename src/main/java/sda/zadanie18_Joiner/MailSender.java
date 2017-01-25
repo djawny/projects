@@ -1,4 +1,4 @@
-package sda.zadanie21;
+package sda.zadanie18_Joiner;
 
 import org.apache.commons.mail.*;
 
@@ -7,7 +7,7 @@ public class MailSender {
         Email email = new SimpleEmail();
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("javandwro1@gmail.com","javand1wro"));
+        email.setAuthenticator(new DefaultAuthenticator("javandwro1@gmail.com", "javand1wro"));
         email.setSSLOnConnect(true);
         email.setFrom("javandwro1@gmail.com");
         email.setSubject(title);
@@ -16,7 +16,8 @@ public class MailSender {
         email.send();
         System.out.println("Mail sent!");
     }
-    public static void sendMailWithAttachment(String address, String title, String content,String attachmentPath) throws EmailException {
+
+    public static void sendMailWithAttachment(String address, String title, String content, String attachmentPath) throws EmailException {
         EmailAttachment attachment = new EmailAttachment();
         attachment.setPath(attachmentPath);
         attachment.setDisposition(EmailAttachment.ATTACHMENT);
@@ -26,7 +27,7 @@ public class MailSender {
         MultiPartEmail email = new MultiPartEmail();
         email.setHostName("smtp.gmail.com");
         email.setSmtpPort(465);
-        email.setAuthenticator(new DefaultAuthenticator("javandwro1@gmail.com","javand1wro"));
+        email.setAuthenticator(new DefaultAuthenticator("javandwro1@gmail.com", "javand1wro"));
         email.setSSLOnConnect(true);
         email.setFrom("javandwro1@gmail.com");
         email.setSubject(title);

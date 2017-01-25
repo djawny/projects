@@ -1,4 +1,4 @@
-package sda.zadanie19_json.zad1;
+package sda.zadanie21_json.zad1;
 
 public class CreditCard {
     private int number;

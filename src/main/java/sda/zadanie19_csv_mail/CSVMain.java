@@ -1,4 +1,4 @@
-package sda.zadanie21;
+package sda.zadanie19_csv_mail;
 
 public class CSVMain {
     public static void main(String[] args) {

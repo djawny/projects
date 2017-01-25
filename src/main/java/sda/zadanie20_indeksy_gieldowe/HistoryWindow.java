@@ -1,4 +1,4 @@
-package sda.zadanie18_indeksy_gieldowe;
+package sda.zadanie20_indeksy_gieldowe;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
