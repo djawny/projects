@@ -1,5 +1,7 @@
 package zadanie19_json.zad1;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import java.io.IOException;
 
 public class Main {
