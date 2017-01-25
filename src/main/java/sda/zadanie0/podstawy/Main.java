@@ -1,6 +1,7 @@
-package sda.sdajava.przyklady.klas;
+package sda.zadanie0.podstawy;
 
 public class Main {
+
     public static void main(String[] args) {
 
     }

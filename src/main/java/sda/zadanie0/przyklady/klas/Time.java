@@ -1,4 +1,4 @@
-package sda.sdajava.przyklady.klas;
+package sda.zadanie0.przyklady.klas;
 
 /**
  * Created by RENT on 2016-12-07.

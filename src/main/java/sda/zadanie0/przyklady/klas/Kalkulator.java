@@ -1,4 +1,4 @@
-package sda.sdajava.przyklady.klas;
+package sda.zadanie0.przyklady.klas;
 
 
 public class Kalkulator {

@@ -1,4 +1,4 @@
-package sda.sdajava.podstawy;
+package sda.zadanie0.podstawy;
 
 
 import java.util.Scanner;

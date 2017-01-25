@@ -1,4 +1,4 @@
-package sda.sdajava.podstawy;
+package sda.zadanie0.podstawy;
 
 public class WyswietlOkreg {
     public static void main(String[] args) {
