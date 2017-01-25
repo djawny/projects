@@ -32,7 +32,6 @@ public class OpenWeatherMapClient {
             }
         });
 
-
 //        System.out.println("Podaj nazwe miasta");
 //        String city = new Scanner(System.in).nextLine();
 //
@@ -50,6 +49,7 @@ public class OpenWeatherMapClient {
 //                .asObject(Weather.class)
 //                .getBody();
 //        System.out.println(weather);
+
         String cityExample = "Wroclaw";
 
         JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
