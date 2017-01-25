@@ -43,7 +43,7 @@ public class OpenWeatherMapClient {
 //
 //        System.out.println(response);
 
-        Weather temp = Unirest.get("http://192.168.2.17:8080/customers/dj01")
+        Weather temp = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
                 .queryString("q", city + ",pl")
                 .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
                 .asObject(Weather.class)
