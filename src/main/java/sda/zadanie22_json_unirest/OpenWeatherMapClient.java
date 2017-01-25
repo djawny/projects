@@ -1,6 +1,7 @@
 package sda.zadanie22_json_unirest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
@@ -32,8 +33,8 @@ public class OpenWeatherMapClient {
         });
 
 
-        System.out.println("Podaj nazwe miasta");
-        String city = new Scanner(System.in).nextLine();
+//        System.out.println("Podaj nazwe miasta");
+//        String city = new Scanner(System.in).nextLine();
 //
 //        String response = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
 //                .queryString("q", city + ",pl")
@@ -43,12 +44,30 @@ public class OpenWeatherMapClient {
 //
 //        System.out.println(response);
 
-        Weather temp = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
-                .queryString("q", city + ",pl")
+//        Weather weather = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
+//                .queryString("q", city + ",pl")
+//                .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
+//                .asObject(Weather.class)
+//                .getBody();
+//        System.out.println(weather);
+        String cityExample = "Wroclaw";
+
+        JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
+                .queryString("q", cityExample + ",pl")
                 .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
-                .asObject(Weather.class)
+                .asJson()
                 .getBody();
+
+        String temp = jsonNode.getObject()
+                .optJSONObject("main")
+                .optString("temp");
         System.out.println(temp);
+
+        String description = jsonNode.getObject()
+                .optJSONArray("weather")
+                .getJSONObject(0)
+                .optString("description");
+        System.out.println(description);
 
     }
 }
