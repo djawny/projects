@@ -1,5 +1,7 @@
 package sda.zadanie20_json_cdn;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
@@ -7,7 +9,7 @@ import java.io.IOException;
 
 public class ApiClient {
     public static void main(String[] args) throws UnirestException, IOException {
-//        String response = Unirest.get("http://192.168.2.17:8080/customers/123456").asString().getBody();
+        String response = Unirest.get("http://192.168.2.17:8080/customers/dj01").asString().getBody();
 //        System.out.println(response);
 //        String json = "    {\n" +
 //                "        \"firstName\": \"Adam1111111\",\n" +
@@ -21,5 +23,10 @@ public class ApiClient {
 //                .asString().getBody();
 //        System.out.println(postResponse);
 
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
+
+        Person person1 = objectMapper.readValue(response, Person.class);
+        System.out.println(person1);
     }
 }
