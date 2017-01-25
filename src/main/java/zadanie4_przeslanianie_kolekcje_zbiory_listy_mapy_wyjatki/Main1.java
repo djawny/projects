@@ -12,11 +12,11 @@ public class Main1 {
         List<String> list1 = new LinkedList<>();
 
         long startTime = System.nanoTime();
-        for (int i = 0; i < 10_000_000; i++) {
+        for (int i = 0; i < 10000000; i++) {
             list1.add("ABC");
         }
         long endTime = System.nanoTime();
-        System.out.println("LinkedList: " + (endTime - startTime) / 1_000_000_000d);
+        System.out.println("LinkedList: " + (endTime - startTime) / 1000000000d);
 
         List<String> list2 = new ArrayList<>();
 
@@ -25,7 +25,7 @@ public class Main1 {
             list2.add("ABC");
         }
         endTime = System.nanoTime();
-        System.out.println("ArrayList:" + (endTime - startTime) / 1_000_000_000d);
+        System.out.println("ArrayList:" + (endTime - startTime) / 1000000000d);
 
         List<String> stingList = new ArrayList<>();
         boolean index = true;
