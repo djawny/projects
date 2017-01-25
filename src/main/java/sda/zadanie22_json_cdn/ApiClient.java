@@ -1,7 +1,6 @@
 package sda.zadanie22_json_cdn;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
@@ -24,8 +23,6 @@ public class ApiClient {
 //        System.out.println(postResponse);
 
         ObjectMapper objectMapper = new ObjectMapper();
-        objectMapper.enable(SerializationFeature.INDENT_OUTPUT);
-
         Person person1 = objectMapper.readValue(response, Person.class);
         System.out.println(person1);
     }
