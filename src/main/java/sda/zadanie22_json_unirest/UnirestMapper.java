@@ -1,4 +1,4 @@
-package sda.zadanie22_json_cdn;
+package sda.zadanie22_json_unirest;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.mashape.unirest.http.ObjectMapper;

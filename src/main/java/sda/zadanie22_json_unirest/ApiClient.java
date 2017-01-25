@@ -1,6 +1,5 @@
-package sda.zadanie22_json_cdn;
+package sda.zadanie22_json_unirest;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
