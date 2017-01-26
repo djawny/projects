@@ -7,6 +7,8 @@ import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class OpenWeatherMapClient {
@@ -50,10 +52,34 @@ public class OpenWeatherMapClient {
 //                .getBody();
 //        System.out.println(weather);
 
-        String cityExample = "Wroclaw";
+//        String cityExample = "Wroclaw";
+//
+//        JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
+//                .queryString("q", cityExample)
+//                .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
+//                .asJson()
+//                .getBody();
+//
+//        String temp = jsonNode.getObject()
+//                .optJSONObject("main")
+//                .optString("temp");
+//        System.out.println(temp);
+//
+//        String description = jsonNode.getObject()
+//                .optJSONArray("weather")
+//                .getJSONObject(0)
+//                .optString("description");
+//        System.out.println(description);
+
+        Map<String, String> descriptionMap = new HashMap<>();
+        descriptionMap.put("clear sky", "bezchmurnie");
+
+        double lat = 35;
+        double lon = 139;
 
         JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
-                .queryString("q", cityExample)
+                .queryString("lat", lat)
+                .queryString("lon", lon)
                 .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
                 .asJson()
                 .getBody();
@@ -61,13 +87,14 @@ public class OpenWeatherMapClient {
         String temp = jsonNode.getObject()
                 .optJSONObject("main")
                 .optString("temp");
-        System.out.println(temp);
+        double tempInCel = Double.parseDouble(temp) - 273.15;
+        System.out.printf("%.2f C%n", tempInCel);
 
         String description = jsonNode.getObject()
                 .optJSONArray("weather")
                 .getJSONObject(0)
                 .optString("description");
-        System.out.println(description);
+        System.out.println(descriptionMap.get(description));
 
     }
 }
