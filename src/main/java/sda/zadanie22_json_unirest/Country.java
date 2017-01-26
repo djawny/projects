@@ -35,7 +35,7 @@ public class Country {
             String temp = jsonNode.getObject()
                     .optJSONObject("main")
                     .optString("temp");
-            System.out.println(capital + ": " + temp);
+            System.out.println(capital + ": " + temp + " C");
         }
     }
 }
