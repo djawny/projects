@@ -53,7 +53,7 @@ public class OpenWeatherMapClient {
         String cityExample = "Wroclaw";
 
         JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
-                .queryString("q", cityExample + ",pl")
+                .queryString("q", cityExample)
                 .queryString("appid", "779bcb1c99f4dcd8ffe6b596d5dc919d")
                 .asJson()
                 .getBody();
