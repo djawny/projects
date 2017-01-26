@@ -10,7 +10,7 @@ public class HolidayApiClient {
         String country = "PL";
         String year = "2016";
 
-        JsonNode jsonNode = Unirest.get("http://api.openweathermap.org/data/2.5/weather")
+        JsonNode jsonNode = Unirest.get("http://holidayapi.com/v1/holidays")
                 .queryString("key", "1f1c9c23-e6b1-4b71-8a06-b3fe9b176bfb")
                 .queryString("country", country)
                 .queryString("year", year)
