@@ -88,7 +88,7 @@ public class OpenWeatherMapClient {
                 .optJSONObject("main")
                 .optString("temp");
         double tempInCel = Double.parseDouble(temp) - 273.15;
-        System.out.printf("%.2f C%n", tempInCel);
+        System.out.printf("%.2f%n", tempInCel);
 
         String description = jsonNode.getObject()
                 .optJSONArray("weather")
