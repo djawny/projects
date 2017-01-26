@@ -6,10 +6,7 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class Country {
+public class RestCountriesPlusOpenWeatherClient {
     public static void main(String[] args) throws UnirestException {
         JsonNode response = Unirest.get("https://restcountries-v1.p.mashape.com/all")
                 .header("X-Mashape-Key", "DBZFbIuWd2mshhrDzjIqyYDhzrwup1iMThBjsn0WrxveKgBHdt")
