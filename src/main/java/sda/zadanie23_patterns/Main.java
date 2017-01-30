@@ -10,6 +10,9 @@ package sda.zadanie23_patterns;
 //ijpa
 //hibenegi
 
+//head first - java
+//ocjp exam guide
+
 /*
 Patterns: (wzorce projektowe)
 Creational:
