@@ -7,6 +7,9 @@ package sda.zadanie23_patterns;
 //https://market.mashape.com/undefined
 //http://start.spring.io/
 
+//ijpa
+//hibenegi
+
 /*
 Patterns: (wzorce projektowe)
 Creational:
