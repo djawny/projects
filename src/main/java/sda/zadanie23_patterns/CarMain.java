@@ -1,17 +1,17 @@
-package sda.zadanie23_factorypatterns_designpatterns_singleton_builder;
+package sda.zadanie23_patterns;
 
 /*Patterns
 creational
--factory pattern
--abstract factory
--singleton
--factory
+- factory pattern
+- abstract factory
+- singleton
+- factory
 structual
--decorator
--flyweight
--adapter
+- decorator
+- flyweight
+- adapter
 behavioral
--
+- strategy
 -
 -
 */

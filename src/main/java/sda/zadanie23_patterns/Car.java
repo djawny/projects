@@ -1,4 +1,4 @@
-package sda.zadanie23_factorypatterns_designpatterns_singleton_builder;
+package sda.zadanie23_patterns;
 
 public class Car {
     private String id;
