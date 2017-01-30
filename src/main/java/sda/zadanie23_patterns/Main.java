@@ -8,7 +8,7 @@ package sda.zadanie23_patterns;
 //http://start.spring.io/
 
 /*
-Patterns:
+Patterns: (wzorce projektowe)
 Creational:
 - factory pattern
 - abstract factory
