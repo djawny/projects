@@ -1,8 +1,5 @@
 package sda.zadanie23_factorypatterns_designpatterns_singleton_builder;
 
-/**
- * Created by RENT on 2017-01-30.
- */
 public class Car {
     private String id;
     private String brand;
