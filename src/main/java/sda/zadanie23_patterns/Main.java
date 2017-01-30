@@ -14,6 +14,11 @@ package sda.zadanie23_patterns;
 //ocjp exam guide
 //effective java
 
+//mkyong - spring
+//dzone.com
+//codingame
+//udemy
+
 /*
 Patterns: (wzorce projektowe)
 Creational:
