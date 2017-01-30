@@ -1,27 +1,24 @@
 package sda.zadanie23_patterns;
 
-/*Patterns
-creational
+/*
+Patterns:
+Creational:
 - factory pattern
 - abstract factory
 - singleton
 - factory
-structual
+Structural:
 - decorator
 - flyweight
 - adapter
-behavioral
+Behavioral:
 - strategy
--
--
+- null object
+- observer
 */
+
 public class CarMain {
     public static void main(String[] args) {
         Car car = new Car.Builder("123").withBrand("Opel").withModel("Vectra").build();
-
-
-
-
-
     }
 }
