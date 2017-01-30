@@ -12,6 +12,7 @@ package sda.zadanie23_patterns;
 
 //head first - java
 //ocjp exam guide
+//effective java
 
 /*
 Patterns: (wzorce projektowe)
