@@ -1,6 +1,4 @@
-package sda.zadanie23_patterns;
-
-import sda.zadanie0.przyklady.klas.Point;
+package sda.zadanie23_patterns.flyweight;
 
 public class PointMain {
     public static void main(String[] args) {
