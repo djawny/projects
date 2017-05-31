@@ -1,4 +1,4 @@
-package sda.zadanie23_design_patterns.calculator;
+package sda.zadanie23_design_patterns.calculator_factory;
 
 public class SubtractOperation implements Operation {
 
