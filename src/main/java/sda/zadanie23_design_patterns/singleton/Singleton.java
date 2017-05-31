@@ -1,4 +1,4 @@
-package sda.zadanie23_design_patterns;
+package sda.zadanie23_design_patterns.singleton;
 
 public class Singleton {
     private static Singleton singleton = new Singleton();
