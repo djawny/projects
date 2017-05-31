@@ -1,4 +1,4 @@
-package sda.zadanie23_design_patterns.factoryPattern;
+package sda.zadanie23_design_patterns.factory;
 
 public class MustangGTI implements Car {
     @Override

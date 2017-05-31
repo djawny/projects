@@ -1,4 +1,4 @@
-package sda.zadanie23_design_patterns;
+package sda.zadanie23_design_patterns.builder;
 
 public class Car {
     private String id;
